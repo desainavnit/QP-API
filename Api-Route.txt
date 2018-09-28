@@ -1,0 +1,56 @@
+6:21 PM 22/09/2018
+-------------------------------------------
+Route::group(['namespace' => 'Api'], function () {
+    Route::post("login", "LoginApiController@login");      
+    Route::post("logout", "LoginApiController@logout");
+    Route::post("forgot_password", "LoginApiController@forgot_password");
+    Route::post("student_register", "RegisterApiController@student_register");
+    Route::post("get_tutor_list", "TutorApiController@get_tutor_list");
+    Route::post("get_one_tutor", "TutorApiController@get_one_tutor");
+    
+    Route::post("book_private_tution", "PrivateTutionApiController@book_private_tution");
+   
+});
+
+*******************************************************************************************
+5:02 PM 24/09/2018
+--------------------------------------
+Route::group(['namespace' => 'Api'], function () {
+    Route::post("login", "LoginApiController@login");      
+    Route::post("logout", "LoginApiController@logout");
+    Route::post("forgot_password", "LoginApiController@forgot_password");
+    Route::post("student_register", "RegisterApiController@student_register");
+    Route::post("get_tutor_list", "TutorApiController@get_tutor_list");
+    Route::post("get_one_tutor", "TutorApiController@get_one_tutor");
+    Route::post("get_tutor_calendar", "TutorApiController@get_tutor_calendar");
+    Route::post("make_as_favourite_tutor", "TutorApiController@make_as_favourite_tutor");
+    Route::post("make_as_unfavourite_tutor", "TutorApiController@make_as_unfavourite_tutor");
+    
+    
+    Route::post("book_private_tution", "PrivateTutionApiController@book_private_tution");
+   
+});
+************************************************************************************
+2:43 PM 26/09/2018
+-----------------------------------------------
+Route::group(['namespace' => 'Api'], function () {
+    Route::post("login", "LoginApiController@login");      
+    Route::post("logout", "LoginApiController@logout");
+    Route::post("forgot_password", "LoginApiController@forgot_password");
+    Route::post("student_register", "RegisterApiController@student_register");
+    Route::post("get_tutor_list", "TutorApiController@get_tutor_list");
+    Route::post("get_one_tutor", "TutorApiController@get_one_tutor");
+    Route::post("get_favourite_tutor_list", "TutorApiController@get_favourite_tutor_list");
+    Route::post("get_tutor_calendar", "TutorApiController@get_tutor_calendar");
+    Route::post("make_as_favourite_tutor", "TutorApiController@make_as_favourite_tutor");
+    Route::post("make_as_unfavourite_tutor", "TutorApiController@make_as_unfavourite_tutor");
+    
+    
+    Route::post("book_private_tution", "PrivateTutionApiController@book_private_tution");
+    Route::post("get_student_calendar", "StudentProfileApiController@get_student_calendar");
+    Route::post("get_student_profile", "StudentProfileApiController@get_student_profile");
+    
+    Route::post("student_change_password", "StudentProfileApiController@student_change_password");
+    Route::post("change_student_profile", "StudentProfileApiController@change_student_profile");
+   
+});  
