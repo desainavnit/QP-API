@@ -578,3 +578,58 @@ Route::group(['namespace' => 'Api'], function () {
    
 });
 ********************************************************************************
+6:27 PM 19/11/2018
+------------------------------------------------------------------
+Route::group(['namespace' => 'Api'], function () {
+    Route::post("login", "LoginApiController@login");      
+    Route::post("linkedin_login", "LoginApiController@linkedin_login");      
+    Route::post("logout", "LoginApiController@logout");
+    Route::post("forgot_password", "LoginApiController@forgot_password");
+    Route::post("student_register", "RegisterApiController@student_register");
+    Route::post("get_tutor_list", "TutorApiController@get_tutor_list");
+    Route::post("get_tutor_list_for_search", "TutorApiController@get_tutor_list_for_search");
+    Route::post("get_one_tutor", "TutorApiController@get_one_tutor");
+    Route::post("post_tutor_rating", "TutorApiController@post_tutor_rating");
+    
+    Route::post("get_favourite_tutor_list", "TutorApiController@get_favourite_tutor_list");
+    Route::post("get_tutor_calendar", "TutorApiController@get_tutor_calendar");
+    Route::post("make_as_favourite_tutor", "TutorApiController@make_as_favourite_tutor");
+    Route::post("make_as_unfavourite_tutor", "TutorApiController@make_as_unfavourite_tutor");
+    
+    
+    
+    Route::post("book_private_tution", "PrivateTutionApiController@book_private_tution");
+    Route::post("cancel_private_tution", "PrivateTutionApiController@cancel_private_tution");
+    
+    Route::post("get_student_calendar", "StudentProfileApiController@get_student_calendar");
+    Route::post("student_private_tution_history", "StudentProfileApiController@student_private_tution_history");
+    
+    Route::post("get_student_profile", "StudentProfileApiController@get_student_profile");
+    
+    Route::post("student_change_password", "StudentProfileApiController@student_change_password");
+    Route::post("change_student_profile", "StudentProfileApiController@change_student_profile");
+    
+    Route::post("get_one_course", "CourseApiController@get_one_course");
+    Route::post("get_one_course1", "CourseApiController@get_one_course1");//same api
+    Route::post("get_course_lesson", "CourseApiController@get_course_lesson");
+    Route::post("post_course_rating", "CourseApiController@post_course_rating");
+    
+    
+    Route::post("create_course_question", "CourseQAsApiController@create_course_question");
+    Route::post("update_course_question", "CourseQAsApiController@update_course_question"); 
+    Route::post("post_course_question_reply", "CourseQAsApiController@post_course_question_reply"); 
+        
+   Route::post("create_tutor_question", "TutorQAsApiController@create_tutor_question");
+   Route::post("update_tutor_question", "TutorQAsApiController@update_tutor_question");
+   Route::post("post_tutor_question_reply", "TutorQAsApiController@post_tutor_question_reply");
+   
+   Route::post("store_stripe_paymet_response", "PaymentApiController@store_stripe_paymet_response");
+   
+   Route::post("course_order", "OrderApiController@course_order");
+   Route::post("cancel_order", "OrderApiController@cancel_order");
+   Route::post("get_student_order_cart", "OrderApiController@get_student_order_cart");
+   
+    Route::post("update_notification_setting", "LoginApiController@update_notification_setting");
+   
+});  
+************************************************************
